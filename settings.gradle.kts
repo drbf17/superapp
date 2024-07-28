@@ -21,3 +21,11 @@ dependencyResolutionManagement {
 
 rootProject.name = "superapp"
 include(":app")
+include(":balance")
+include(":design")
+include(":navigation")
+include(":payments")
+
+
+
+

@@ -52,6 +52,10 @@ android {
 
 dependencies {
 
+    implementation(project(":balance"))
+    implementation(project(":design"))
+    implementation(project(":payments"))
+    implementation(project(":navigation"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
