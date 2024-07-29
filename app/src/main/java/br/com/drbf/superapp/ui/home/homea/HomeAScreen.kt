@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import br.com.drbf.superapp.ui.MainRoutes
+import br.com.drbf.navigation.ui.routes.MainRoutes
 import br.com.drbf.superapp.ui.home.HomeDestination
 
 @Composable
