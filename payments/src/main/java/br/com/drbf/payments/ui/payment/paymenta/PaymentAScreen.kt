@@ -8,6 +8,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import br.com.drbf.navigation.domain.Person
 import br.com.drbf.navigation.ui.routes.exposed.app.AppExposedDestination
 import br.com.drbf.navigation.ui.routes.exposed.balance.BalanceExposedDestinations
 import br.com.drbf.payments.ui.PaymentDestination
@@ -30,7 +31,9 @@ fun PaymentAScreen(navigate: (Any) -> Unit) {
             Text(text = "Go to Home C")
         }
         Button(onClick = {
-            navigate(BalanceExposedDestinations.BalanceA("John"))
+            navigate(BalanceExposedDestinations.BalanceA(
+                person = Person(name = "John", id = 10, age = 10)
+            ))
         }) {
             Text(text = "Go to Balance A")
         }
